@@ -46,4 +46,3 @@ RUN yarn install --pure-lockfile --production
 EXPOSE 8080
 
 CMD ["yarn", "workspace", "@omnivore/content-fetch", "start"]
-
