@@ -23,6 +23,7 @@ package-lock.json
 
 # Docker data
 .docker
+docker-compose.yml
 
 # DSStore:
 .DS_Store
