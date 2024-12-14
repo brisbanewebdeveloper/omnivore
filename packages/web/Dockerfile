@@ -27,8 +27,10 @@ COPY /packages/web/package.json ./packages/web/package.json
 RUN yarn install --pure-lockfile
 ADD /packages/web ./packages/web
 
+# ROUTING DOES NOT WORK WITH THIS
 # We want an empty next.config.js when running in docker
-RUN echo "module.exports = {}" > ./packages/web/next.config.js
+# RUN echo "module.exports = {}" > ./packages/web/next.config.js
+COPY /packages/web/next.config.js ./packages/web/next.config.js
 RUN yarn workspace @omnivore/web build
 
 
