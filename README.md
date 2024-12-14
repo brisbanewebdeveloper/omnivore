@@ -8,6 +8,13 @@
 
 <img align="right" src="https://avatars.githubusercontent.com/u/70113176?s=400&u=506b21d9f019f3160963c010ef363667fb24c7c9&v=4" height="150px" alt="Omnivore Logo">
 
+```
+This Omnivore has undergone the following changes and is therefore not suitable for public use:
+
+* Automatic email verification
+  After you signed up, it redirects to the login page and you are ready to log in
+```
+
 [Omnivore](https://omnivore.app) is a complete, open source read-it-later solution for people who like text.
 
 We built Omnivore because we love reading and we want it to be more social. Join us!

@@ -553,12 +553,16 @@ export function authRouter() {
           pictureUrl,
           bio,
           password: hashedPassword,
-          pendingConfirmation: true,
+          // Skip the email authentication
+          // pendingConfirmation: true,
+          pendingConfirmation: false,
         })
 
-        res.redirect(
-          `${env.client.url}/auth/verify-email?message=SIGNUP_SUCCESS`
-        )
+        // Skip the email authentication
+        // res.redirect(
+        //   `${env.client.url}/auth/verify-email?message=SIGNUP_SUCCESS`
+        // )
+        res.redirect(`${env.client.url}/auth/email-login`)
       } catch (e) {
         logger.info('email-signup exception:', e)
         if (isErrorWithCode(e)) {
