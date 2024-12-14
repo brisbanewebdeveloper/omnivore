@@ -11,6 +11,9 @@
 ```
 This Omnivore has undergone the following changes and is therefore not suitable for public use:
 
+* No shutdown banner
+  Not displaying the banner about the shutdown
+
 * Automatic email verification
   After you signed up, it redirects to the login page and you are ready to log in
 ```
